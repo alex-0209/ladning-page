@@ -1,0 +1,96 @@
+body{
+    max-width: 100%;
+    margin: 0;
+    
+    background-color: #cccccc;
+    background-image: url(../img/bg.png);
+}
+
+h1{
+    margin: 0;
+}
+
+header{
+    background-color: #000;
+
+    padding: 20px 0;
+    margin-bottom: 15px;
+}
+
+.header-title{
+    font-family: GABRWFFR;
+    color: #fff;
+    text-align: center;
+    font-size: 49px;
+
+    margin-bottom: 10px;
+}
+
+.nav-header{
+    margin: auto;
+    text-align: center;
+}
+
+.nav-logo{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+
+    margin: 0 20px;
+    padding:10px;
+}
+
+.nav-logo:hover{
+    color: #e5ec76;
+    transition: linear 0.2s;
+}
+
+.pivot{
+    width: 300px;
+    position: relative;
+
+    animation-name: pivot1;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+
+}
+
+
+
+@keyframes pivot1 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
+
+.stage {
+    border-bottom: 3px solid #444;
+   /* display: flex;*/
+    height: 330px;
+    width: 100%;
+}
+.box {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 200px;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+    width: 200px;
+
+
+}
+
+.box:hover {
+    animation-name: bounce-1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes bounce-1 {
+  /*  0%   { transform: rotate(45deg);  }
+    50%  { transform: rotate(90deg);  }
+    75% { transform: rotate(-45deg); }
+    100% { transform: rotate(-90deg);  }*/
+    100% { transform: rotate(360deg);}
+}
+
+
+
